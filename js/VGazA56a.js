@@ -1,0 +1,1 @@
+import{j as e}from"./ChUMkS6P.js";const i=(t,s)=>{try{if(e(t)||!s)return console.warn("Widget data is empty"),{list:[],isArray:!1};const r=t[s];return{list:r||[],isArray:Array.isArray(r)}}catch(r){console.log(r)}},o=i;export{o as g};

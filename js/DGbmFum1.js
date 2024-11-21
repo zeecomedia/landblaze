@@ -1,0 +1,1 @@
+var e=Object.defineProperty;var i=(n,t,c)=>t in n?e(n,t,{enumerable:!0,configurable:!0,writable:!0,value:c}):n[t]=c;var s=(n,t,c)=>i(n,typeof t!="symbol"?t+"":t,c);class u{constructor(t){s(this,"isEnabled",!0);s(this,"amount",100);s(this,"unitFinalAmount",null);s(this,"currency","USD");Object.assign(this,t)}}export{u as W};

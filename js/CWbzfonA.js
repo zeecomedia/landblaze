@@ -1,0 +1,1 @@
+import{d as e,c as a,k as i}from"./ChUMkS6P.js";const l=s=>`kmb-spinner-ball-${s+1}`,o=e({name:"LoadingSpinner",props:{isLoading:{type:Boolean,default:!1}},render(){if(this.isLoading)return a("div",{class:"kmb-site-loading-bg"},[a("div",{class:"kmb-site-spinner"},[Array.apply(null,Array(8)).map((s,n)=>a("span",{class:i("kmb-spinner-ball",l(n))},null))])])}});export{o as L};

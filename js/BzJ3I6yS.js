@@ -1,0 +1,1 @@
+import"./ChUMkS6P.js";import{n as e}from"./BVv2S30c.js";const i=[e("id"),e("name"),e("nameHtml"),e("slug"),e("coverImage"),e("publishStatus"),e("publishDate"),e("expectedReadMinutes"),e("shortDescription"),e("button"),e("likedCount"),e("viewedCount"),e("siteId"),e("pageTemplateType"),e("expectedReadMinutes")];export{i as P};

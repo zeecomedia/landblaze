@@ -1,0 +1,1 @@
+var i=Object.defineProperty;var r=(t,s,e)=>s in t?i(t,s,{enumerable:!0,configurable:!0,writable:!0,value:e}):t[s]=e;var a=(t,s,e)=>r(t,typeof s!="symbol"?s+"":s,e);import{af as c}from"./ChUMkS6P.js";class u{constructor(s){a(this,"key",c());Object.assign(this,s)}}class g{constructor(s){a(this,"rate",5);a(this,"isEnabled",!0);Object.assign(this,s)}}export{u as U,g as W};

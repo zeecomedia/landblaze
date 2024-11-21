@@ -1,0 +1,1 @@
+import{l as i,ag as a,ao as m,ap as d}from"./ChUMkS6P.js";const s=i({loader(){const o=window._$delayHydration||Promise.resolve();return new Promise(r=>{o.then(()=>{r((t,{slots:e})=>{var n;return a(d,[a(m,"nuxt-delay-hydration-component"),(n=e.default)==null?void 0:n.call(e,t)])})})})},suspensible:!1});export{s as _};
