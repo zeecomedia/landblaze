@@ -495,9 +495,7 @@
               transition: color 0.3s ease;
           }
       
-          .kmb-menu-item-link:hover {
-              color: #007bff;
-          }
+          
       
           /* Toggle Button Styles */
           .kmb-navbar-toggles {
@@ -584,6 +582,48 @@
               display: flex;
               transition: transform 0.8s ease-in-out;
           }
+
+          .team-member {
+            position: relative;
+            perspective: 1000px;
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        .social-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .team-member:hover .social-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        .social-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .linkedin { background-color: #0077B5; }
+        .facebook { background-color: #1DA1F2; }
+        .instagram { background-color: #E1306C; }
        
       </style>
       
@@ -649,15 +689,17 @@
           <div class="kmb-site-header-container kmb-widget-container">
             <div class="kmb-header-row kmb-header-text">
               <div class="kmb-site-logo kmb-site-header-logo">
-                <a
-                  aria-current="page"
-                  href="index.html"
-                  class="router-link-active router-link-exact-active kmb-logo-link kmb-logo-type-2 kmb-header-logo-link"
-                  ><span class="kmb-site-logo-txt kmb-site-default-text"
-                    >Landblaze</span
-                  ></a
-                >
-              </div>
+              <a 
+                aria-current="page"
+                href="index.html"
+                class="router-link-active router-link-exact-active kmb-logo-link kmb-logo-type-6 kmb-header-logo-link"
+                style="font-size: 24px; font-weight: 900; letter-spacing: -1px;"
+              >
+                <span class="kmb-site-logo-txt kmb-site-default-text">
+                  <b style="font-weight: 900;">Landblaze</b>
+                </span>
+              </a>
+            </div>
               <div
                 class="kmb-header-menu kmb-horizontal-menu kmb-header-text kmb-site-default-dir flex flex-1 kmb-header-align-left-menu justify-start kmb-dropdown-menu"
               >
@@ -944,7 +986,7 @@
                 <div class="kmb-widget-content text-center">
                   <div
                     class="kmb-widget-bg-image-item kmb-parallax-wrapper kmb-widget-banner-item kmb-widget-hidden-bg-image kmb-widget-bg-image-with-overlay kmb-widget-bg-image-with-blur bg-center w-full kmb-widget-bg-image-group-with-bg-overlay"
-                    style="min-height: 720px"
+                    style="background-image: url('img2-sub/cache/img-pack/1244/w-255/h-240/ww-255/wh-240/img-pack/1244/background.jpg'); background-size: cover; background-position: center;"
                   >
                     <div class="kmb-widget-bg-image" data-height="720"></div>
                     <div class="kmb-widget-bg-image-content">
@@ -966,14 +1008,14 @@
                               <div class="kmb-widget-aligment-wrap">
                                 <!--[-->
                                 <h1 class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider kmb-banner-title" data-max-chars="150" style="color: white;">
-                                  Landblaze Limited: Building Your Future, One Property at a Time
+                                  <b>Landblaze Limited: Building Your Future, One Property at a Time</b>
                                 </h1>
                                 <div
                                   class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-banner-description"
                                   data-max-chars="1200"
                                 >
-                                Have you wondered if securing your property could feel both simple and rewarding?<br>
-                                Landblaze guides you with transparency and expertise, making every step toward property ownership smooth and informed
+                                <b>Have you wondered if securing your property could feel both simple and rewarding?</b><br>
+                                <b>Landblaze guides you with transparency and expertise, making every step toward property ownership smooth and informed</b>
                                 </div>
                                 <div
                                   class="kmb-widget-btn-group kmb-widget-btn-group-center"
@@ -1101,7 +1143,7 @@
                                     data-height="255"
                                     class="kmb-widget-image-item kmb-widget-type-image"
                                     style="max-width: 410px; max-height: 255px"
-                                    src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/land.jpg"
+                                    src="img2-sub/cache/img-pack/1244/w-255/h-240/ww-255/wh-240/img-pack/1244/image.jpg"
                                   />
                                 </div>
                               </div>
@@ -1151,7 +1193,7 @@
                                     data-height="255"
                                     class="kmb-widget-image-item kmb-widget-type-image"
                                     style="max-width: 410px; max-height: 255px"
-                                    src="img2-sub/cache/img-pack/1244/w-410/h-255/ww-410/wh-255/img-pack/1244/photo2.jpg"
+                                    src="img2-sub/cache/img-pack/1244/w-255/h-240/ww-255/wh-240/img-pack/1244/image2.jpg"
                                   />
                                 </div>
                               </div>
@@ -1201,7 +1243,7 @@
                                     data-height="255"
                                     class="kmb-widget-image-item kmb-widget-type-image"
                                     style="max-width: 410px; max-height: 255px"
-                                    src="img2-sub/cache/img-pack/1244/w-410/h-255/ww-410/wh-255/img-pack/1244/photo3.jpg"
+                                    src="img2-sub/cache/img-pack/1244/w-255/h-240/ww-255/wh-240/img-pack/1244/image3.jpeg"
                                   />
                                 </div>
                               </div>
@@ -1251,7 +1293,7 @@
                                     data-height="255"
                                     class="kmb-widget-image-item kmb-widget-type-image"
                                     style="max-width: 410px; max-height: 255px"
-                                    src="img2-sub/cache/img-pack/1244/w-410/h-255/ww-410/wh-255/img-pack/1244/photo1.jpg"
+                                    src="img2-sub/cache/img-pack/1244/w-255/h-240/ww-255/wh-240/img-pack/1244/image4.jpg"
                                   />
                                 </div>
                               </div>
@@ -1301,7 +1343,7 @@
                                     data-height="255"
                                     class="kmb-widget-image-item kmb-widget-type-image"
                                     style="max-width: 410px; max-height: 255px"
-                                    src="img2-sub/cache/img-pack/1244/w-410/h-255/ww-410/wh-255/img-pack/1244/pexels-ketut-subiyanto-4246119.jpg"
+                                    src="img2-sub/cache/img-pack/1244/w-255/h-240/ww-255/wh-240/img-pack/1244/image23.jpg"
                                   />
                                 </div>
                               </div>
@@ -1348,269 +1390,121 @@
               <!--[-->
               <div class="kmb-widget-container-fluid">
                 <!--[-->
-                <div class="kmb-widget-content booking-content">
-                  <div class="kmb-widget-flex-row items-center">
-                    <div
-                      class="lg_w-1-2 w-full lg_order-last self-stretch kmb-self-stretch-img-col"
-                    >
-                      <div
-                        class="kmb-widget-map widget-map kmb-page-widget-map kmb-widget-map-h-full h-full"
-                        id="kmb-map-BookingSettingsT2V1-10061467335521"
-                      >
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.625284998292!2d3.2451435747852004!3d6.568888122634639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9ab2a359e505%3A0x27e17155baa9a62a!2s2%20Omotosho%20Cl%2C%20Ikotun%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1731138292298!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div
-                          class="kmb-site-loading-bg kmb-simple-loading kmb-blue-loading"
-                        >
-                          <div class="kmb-site-spinner">
-                            <!--[--><span
-                              class="kmb-spinner-ball kmb-spinner-ball-1"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-2"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-3"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-4"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-5"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-6"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-7"
-                            ></span
-                            ><span
-                              class="kmb-spinner-ball kmb-spinner-ball-8"
-                            ></span
-                            ><!--]-->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="lg_w-1-2 w-full kmb-lg-widget-right-lg-col-space">
-                      <div class="kmb-widget-booking-col-conent kmb-widget-content-container lg_py-10 py-6">
-                        <div
-                          class="kmb-md-widget-container kmb-md-widget-content-container"
-                        >
-                          <div
-                            class="kmb-widget-aligment-wrap kmb-widget-titles-info"
-                          >
-                            <!--[--><!---->
-                            <h2
-                              class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider"
-                              data-max-chars="150"
-                            >
-                              Book online now
-                            </h2>
-                            <div
-                              class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2"
-                              data-max-chars="1200"
-                            >
-                              Request a new appointment
-                            </div>
-                            <!--]-->
-                          </div>
-                          <div class="kmb-widget-booking-form-wrap">
-                            <div
-                              class="kmb-site-default-form-wrap kmb-widget-booking-contact-form kmb-widget-form-border-bottom-fields kmb-widget-contact-form-left-btn-group"
-                              style=""
-                            >
-                              <form action="https://formspree.io/f/mvgorezl" method="POST"
-                                class="kmb-widget-form kmb-widget-booking-form kmb-widget-contact-form"
-                              >
-                                <div class="kmb-widget-row">
-                                  <!--[-->
-                                  <div
-                                    class="kmb-widget-col kmb-widget-form-group w-full"
-                                  >
-                                    <div
-                                      class="kmb-site-default-group kmb-default-group kmb-widget-form-group"
-                                    >
-                                      <!----><!--[-->
-                                      <div
-                                        class="kmb-widget-field kmb-site-field relative kmb-site-field-group kmb-site-dropdown-group"
-                                      >
-                                        <div
-                                          class="kmb-site-component kmb-site-select kmb-site-field-group kmb-field-group kmb-site-form-select required"
-                                        >
-                                          <select class="hidden">
-                                            <!--[--><!--]--></select
-                                          ><!---->
-                                          <div class="kmb-site-select-container kmb-select-container">
-                                            <div class="kmb-site-field-group kmb-field-group">
-                                                <div class="kmb-site-field kmb-field">
-                                                    <input type="text" 
-                                                           class="kmb-site-form-control" 
-                                                           placeholder="Location*" 
-                                                           name="location"
-                                                           required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                          <!---->
-                                        </div>
-                                        <!---->
-                                      </div>
-                                      <!--]-->
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="kmb-widget-col kmb-widget-form-group w-full"
-                                  >
-                                    <div
-                                      class="kmb-site-default-group kmb-default-group kmb-widget-form-group"
-                                    >
-                                      <!----><!--[-->
-                                      <div
-                                        class="kmb-widget-field kmb-site-field relative kmb-site-field-group kmb-site-dropdown-group"
-                                      >
-                                        <div
-                                          class="kmb-site-component kmb-site-select kmb-site-field-group kmb-field-group kmb-site-form-select required"
-                                        >
-                                          <select class="hidden">
-                                            <!--[--><!--]--></select
-                                          ><!---->
-                                          <div class="kmb-site-select-container kmb-select-container">
-                                            <div class="kmb-site-field-group kmb-field-group">
-                                                <div class="kmb-site-field kmb-field">
-                                                    <input type="text" 
-                                                           class="kmb-site-form-control" 
-                                                           placeholder="Service*" 
-                                                           name="service"
-                                                           required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                          <!---->
-                                        </div>
-                                        <!---->
-                                      </div>
-                                      <!--]-->
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="kmb-widget-col kmb-widget-form-group w-full"
-                                  >
-                                    <div
-                                      class="kmb-site-default-group kmb-default-group kmb-widget-form-group"
-                                    >
-                                      <!----><!--[-->
-                                      
-                                          <!---->
-                                        </div>
-                                        <!---->
-                                      </div>
-                                      <!--]-->
-                                    </div>
-                                  </div>
-                                  
-                                  
                 
-                                  </div>
-                                
-                                  </div>
-                                  <!--]--><!--[--><!--]-->
-                                </div>
-                                <div
-                                  class="kmb-widget-btn-group kmb-widget-btn-group-center"
-                                >
-                                  <!--[--><button
-                                    class="kmb-widget-btn kmb-widget-primary-btn kmb-submit-form-btn"
-                                    style=""
-                                    type="submit"
-                                    aria-label="button"
-                                  >
-                                    <!--[--><!----><!----><span
-                                      class="kmb-widget-btn-label"
-                                      >Book</span
-                                    ><!----><!--]--></button
-                                  ><!--]-->
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <!--]-->
               </div>
               <!--]-->
             </div>
             <div class="kmb-page-widget gallery gallery-t6 gallery-t6-v1" id="photoGallery">
               <div class="kmb-widget-content kmb-gallery-content">
-                <div class="kmb-md-widget-container" style="padding: 20px 0;">
-                  <div class="kmb-widget-aligment-wrap kmb-widget-titles-info text-center">
-                      <h2 style="font-size: 36px; color: orange; margin-bottom: 30px; font-weight: bold; text-align: center;">Our Photo</h2>
-                  </div>
-                </div>
-                <div class="kmb-widget-row" style="display: flex; justify-content: space-between; gap: 20px; padding: 40px; margin: 20px auto; max-width: 1200px; flex-wrap: wrap;">
-                  <div class="team-member" style="flex: 1; text-align: center; min-width: 300px; margin: 0 15px;">
-                      <div class="kmb-widget-image2" style="margin-bottom: 15px;">
-                          <img 
-                              onerror="this.setAttribute('data-error', 1)" 
-                              width="300" 
-                              height="400" 
-                              alt="Founder - Landblaze Limited" 
-                              loading="lazy" 
-                              class="kmb-widget-image-item" 
-                              style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"
-                              src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/founder.jpg"
-                          >
-                      </div>
-                      <div class="team-info" style="padding: 10px;">
-                          <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">FEMI OKE</h3>
-                          <p style="margin: 0; color: #666; font-size: 14px;">FOUNDER</p>
+                  <div class="kmb-md-widget-container" style="padding: 20px 0;">
+                      <div class="kmb-widget-aligment-wrap kmb-widget-titles-info text-center">
+                          <h2 style="font-size: 36px; color: orange; margin-bottom: 30px; font-weight: bold; text-align: center;">Our Photo</h2>
                       </div>
                   </div>
-              
-                  <div class="team-member" style="flex: 1; text-align: center; min-width: 300px; margin: 0 15px;">
-                      <div class="kmb-widget-image2" style="margin-bottom: 15px;">
-                          <img 
-                              onerror="this.setAttribute('data-error', 1)" 
-                              width="300" 
-                              height="400" 
-                              alt="Cofounder - Landblaze Limited" 
-                              loading="lazy" 
-                              class="kmb-widget-image-item" 
-                              style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"
-                              src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/cofounder.jpg"
-                          >
-                      </div>
-                      <div class="team-info" style="padding: 10px;">
-                          <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">JACOB OSHONEYE</h3>
-                          <p style="margin: 0; color: #666; font-size: 14px;">CO-FOUNDER</p>
-                      </div>
-                  </div>
-              
-                  <div class="team-member" style="flex: 1; text-align: center; min-width: 300px; margin: 0 15px;">
-                      <div class="kmb-widget-image2" style="margin-bottom: 15px;">
-                          <img 
-                              onerror="this.setAttribute('data-error', 1)" 
-                              width="300" 
-                              height="400" 
-                              alt="Sales Representative - Landblaze Limited" 
-                              loading="lazy" 
-                              class="kmb-widget-image-item" 
-                              style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"
-                              src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/salesrep.jpg"
-                          >
-                      </div>
-                      <div class="team-info" style="padding: 10px;">
-                          <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">OLUWAFERANMI OLUWASANU</h3>
-                          <p style="margin: 0; color: #666; font-size: 14px;">SALESREP</p>
-                      </div>
-                  </div>
-              </div>
-              </div>
+                  <div class="kmb-widget-row" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; width: 100%; gap: 20px; padding: 40px;">
+                    <div class="team-member" style="flex: 0 1 calc(25% - 20px); text-align: center; min-width: 250px; margin: 0;">
+                        <div class="kmb-widget-image2" style="margin-bottom: 15px; position: relative;">
+                            <img 
+                                onerror="this.setAttribute('data-error', 1)" 
+                                width="300" 
+                                height="400" 
+                                alt="Founder - Landblaze Limited" 
+                                loading="lazy" 
+                                class="kmb-widget-image-item" 
+                                style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"
+                                src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/founder.jpg"
+                            >
+                            <div class="social-overlay">
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/share/18gh21kDGu/" target="_blank" class="social-link facebook">Facebook</a>
+                                    <a href="https://www.linkedin.com/in/femi-oke-a72841161" target="_blank" class="social-link linkedin">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info" style="padding: 10px;">
+                            <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">FEMI OKE</h3>
+                            <p style="margin: 0; color: #666; font-size: 14px;">FOUNDER</p>
+                        </div>
+                    </div>
                 
+                    <div class="team-member" style="flex: 0 1 calc(25% - 20px); text-align: center; min-width: 250px; margin: 0;">
+                        <div class="kmb-widget-image2" style="margin-bottom: 15px; position: relative;">
+                            <img 
+                                onerror="this.setAttribute('data-error', 1)" 
+                                width="300" 
+                                height="400" 
+                                alt="Cofounder - Landblaze Limited" 
+                                loading="lazy" 
+                                class="kmb-widget-image-item" 
+                                style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"
+                                src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/cofounder.jpg"
+                            >
+                            <div class="social-overlay">
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/share/dERgSJUufjoXvd4G" target="_blank" class="social-link facebook">Facebook</a>
+                                    <a href="https://www.instagram.com/jayclassics_" target="_blank" class="social-link linkedin">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info" style="padding: 10px;">
+                            <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">JACOB OSHONEYE</h3>
+                            <p style="margin: 0; color: #666; font-size: 14px;">CO-FOUNDER</p>
+                        </div>
+                    </div>
+                
+                    <div class="team-member" style="flex: 0 1 calc(25% - 20px); text-align: center; min-width: 250px; margin: 0;">
+                        <div class="kmb-widget-image2" style="margin-bottom: 15px; position: relative;">
+                            <img 
+                                onerror="this.setAttribute('data-error', 1)" 
+                                width="300" 
+                                height="400" 
+                                alt="Sales Representative - Landblaze Limited" 
+                                loading="lazy" 
+                                class="kmb-widget-image-item" 
+                                style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"
+                                src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/salesrep.jpg"
+                            >
+                            <div class="social-overlay">
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/profile.php?id=100068928527966" target="_blank" class="social-link facebook">Facebook</a>
+                                    <a href="https://www.linkedin.com/in/oluwasanu-oluwaferanmi-4758b9308" target="_blank" class="social-link linkedin">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info" style="padding: 10px;">
+                            <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">OLUWAFERANMI OLUWASANU</h3>
+                            <p style="margin: 0; color: #666; font-size: 14px;">SALESREP</p>
+                        </div>
+                    </div>
+                
+                    <div class="team-member" style="flex: 0 1 calc(25% - 20px); text-align: center; min-width: 250px; margin: 0;">                           
+                        <div class="kmb-widget-image2" style="margin-bottom: 15px; position: relative;">                               
+                            <img                                    
+                                onerror="this.setAttribute('data-error', 1)"                                    
+                                width="300"                                    
+                                height="400"                                    
+                                alt="Media Representative - Landblaze Limited"                                    
+                                loading="lazy"                                    
+                                class="kmb-widget-image-item"                                    
+                                style="width: 100%; height: auto; object-fit: cover; max-width: 300px;"                                   
+                                src="img2-sub/cache/img-pack/1244/w-554/h-540/ww-554/wh-540/img-pack/1244/media.jpg"                               
+                            >                               
+                            <div class="social-overlay">                                   
+                                <div class="social-links">                                     
+                                    <a href="https://www.facebook.com/bestlandinlagos" target="_blank" class="social-link facebook">Facebook</a>                                     
+                                    <a href="https://www.linkedin.com/in/abiola-samson" target="_blank" class="social-link linkedin">LinkedIn</a>                                   
+                                </div>                               
+                            </div>                           
+                        </div>                           
+                        <div class="team-info" style="padding: 10px;">                               
+                            <h3 style="margin: 0 0 5px 0; font-weight: bold; font-size: 16px; color: #333; word-wrap: break-word;">ABIOLA SAMSON</h3>                               
+                            <p style="margin: 0; color: #666; font-size: 14px;">SALES MANAGER</p>                           
+                        </div>                       
+                    </div>
+                  </div>
               </div>
-            </div>
+          </div>
             
            
             <div
@@ -1686,7 +1580,197 @@
          </div>
       </div>
       <!--]-->
-   </div>
+   </div><br><br>
+   <div class="kmb-widget-content booking-content">
+    <div class="kmb-widget-flex-row items-center">
+      <div
+        class="lg_w-1-2 w-full lg_order-last self-stretch kmb-self-stretch-img-col"
+      >
+        <div
+          class="kmb-widget-map widget-map kmb-page-widget-map kmb-widget-map-h-full h-full"
+          id="kmb-map-BookingSettingsT2V1-10061467335521"
+        >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.625284998292!2d3.2451435747852004!3d6.568888122634639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9ab2a359e505%3A0x27e17155baa9a62a!2s2%20Omotosho%20Cl%2C%20Ikotun%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1731138292298!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div
+            class="kmb-site-loading-bg kmb-simple-loading kmb-blue-loading"
+          >
+            <div class="kmb-site-spinner">
+              <!--[--><span
+                class="kmb-spinner-ball kmb-spinner-ball-1"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-2"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-3"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-4"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-5"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-6"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-7"
+              ></span
+              ><span
+                class="kmb-spinner-ball kmb-spinner-ball-8"
+              ></span
+              ><!--]-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg_w-1-2 w-full kmb-lg-widget-right-lg-col-space">
+        <div class="kmb-widget-booking-col-conent kmb-widget-content-container lg_py-10 py-6">
+          <div
+            class="kmb-md-widget-container kmb-md-widget-content-container"
+          >
+            <div
+              class="kmb-widget-aligment-wrap kmb-widget-titles-info"
+            >
+              <!--[--><!---->
+              <h2
+                class="kmb-widget-rich-text kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider"
+                data-max-chars="150"
+              >
+                Book online now
+              </h2>
+              <div
+                class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2"
+                data-max-chars="1200"
+              >
+                Request a new appointment
+              </div>
+              <!--]-->
+            </div>
+            <div class="kmb-widget-booking-form-wrap">
+              <div
+                class="kmb-site-default-form-wrap kmb-widget-booking-contact-form kmb-widget-form-border-bottom-fields kmb-widget-contact-form-left-btn-group"
+                style=""
+              >
+                <form action="https://formspree.io/f/mvgorezl" method="POST"
+                  class="kmb-widget-form kmb-widget-booking-form kmb-widget-contact-form"
+                >
+                  <div class="kmb-widget-row">
+                    <!--[-->
+                    <div
+                      class="kmb-widget-col kmb-widget-form-group w-full"
+                    >
+                      <div
+                        class="kmb-site-default-group kmb-default-group kmb-widget-form-group"
+                      >
+                        <!----><!--[-->
+                        <div
+                          class="kmb-widget-field kmb-site-field relative kmb-site-field-group kmb-site-dropdown-group"
+                        >
+                          <div
+                            class="kmb-site-component kmb-site-select kmb-site-field-group kmb-field-group kmb-site-form-select required"
+                          >
+                            <select class="hidden">
+                              <!--[--><!--]--></select
+                            ><!---->
+                            <div class="kmb-site-select-container kmb-select-container">
+                              <div class="kmb-site-field-group kmb-field-group">
+                                  <div class="kmb-site-field kmb-field">
+                                      <input type="text" 
+                                             class="kmb-site-form-control" 
+                                             placeholder="Location*" 
+                                             name="location"
+                                             required>
+                                  </div>
+                              </div>
+                          </div>
+                            <!---->
+                          </div>
+                          <!---->
+                        </div>
+                        <!--]-->
+                      </div>
+                    </div>
+                    <div
+                      class="kmb-widget-col kmb-widget-form-group w-full"
+                    >
+                      <div
+                        class="kmb-site-default-group kmb-default-group kmb-widget-form-group"
+                      >
+                        <!----><!--[-->
+                        <div
+                          class="kmb-widget-field kmb-site-field relative kmb-site-field-group kmb-site-dropdown-group"
+                        >
+                          <div
+                            class="kmb-site-component kmb-site-select kmb-site-field-group kmb-field-group kmb-site-form-select required"
+                          >
+                            <select class="hidden">
+                              <!--[--><!--]--></select
+                            ><!---->
+                            <div class="kmb-site-select-container kmb-select-container">
+                              <div class="kmb-site-field-group kmb-field-group">
+                                  <div class="kmb-site-field kmb-field">
+                                      <input type="text" 
+                                             class="kmb-site-form-control" 
+                                             placeholder="Service*" 
+                                             name="service"
+                                             required>
+                                  </div>
+                              </div>
+                          </div>
+                            <!---->
+                          </div>
+                          <!---->
+                        </div>
+                        <!--]-->
+                      </div>
+                    </div>
+                    <div
+                      class="kmb-widget-col kmb-widget-form-group w-full"
+                    >
+                      <div
+                        class="kmb-site-default-group kmb-default-group kmb-widget-form-group"
+                      >
+                        <!----><!--[-->
+                        
+                            <!---->
+                          </div>
+                          <!---->
+                        </div>
+                        <!--]-->
+                      </div>
+                    </div>
+                    
+                    
+  
+                    </div>
+                  
+                    </div>
+                    <!--]--><!--[--><!--]-->
+                  </div>
+                  <div
+                    class="kmb-widget-btn-group kmb-widget-btn-group-center"
+                  >
+                    <!--[--><button
+                      class="kmb-widget-btn kmb-widget-primary-btn kmb-submit-form-btn"
+                      style=""
+                      type="submit"
+                      aria-label="button"
+                    >
+                      <!--[--><!----><!----><span
+                        class="kmb-widget-btn-label"
+                        >Book</span
+                      ><!----><!--]--></button
+                    ><!--]-->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
    <!--]-->
 </div>
         <!--]--><!--]-->
@@ -1728,210 +1812,211 @@
               </div>
             </div>
           </div>
+          <div class="kmb-site-popup-wrap kmb-site-popup-wrap-opened"><div class="kmb-site-pop-up-widget kmb-site-pop-up-modal kmb-site-pop-up-widget-form-type-popup kmb-site-pop-up-full-widget-container kmb-site-pop-up-widget-form-middle"><div class="kmb-site-pop-up-modal-dialog w-full"><div class="kmb-site-modal-content"><div class="kmb-site-modal-header kmb-site-pop-up-modal-header"><button class="kmb-site-close-modal-btn" aria-label="close"><i class="kmb-site-icon-close"></i></button></div><div class="kmb-site-modal-body"><div class="kmb-page-widget widget-toolbar-visible"><div class="pop-up-subscribe pop-up-subscribe-v2" widget="[object Object]"><div class="pop-up-widget-content"><div class="kmb-widget-row items-center"><div class="kmb-widget-col md_w-2-5 w-full"><div class="pop-up-widget-content-image md_pr-3 pr-0"><div data-width="420" class="kmb-widget-image kmb-lg-image-h-auto kmb-lg-image-center kmb-widget-image-item-no-rounded"><img width="420" height="420" alt="Landblaze Limited" loading="lazy" data-nuxt-img="" data-width="420" data-height="420" class="kmb-widget-image-item  kmb-widget-type-image" src="https://img2.hocoos.com/cache/w-420/h-420/ww-420/wh-420/popup-img-pack/0/popup-subscribe-default-img.png" style="max-width: 420px; max-height: 420px;" srcset="https://img2.hocoos.com/cache/w-420/h-420/ww-420/wh-420/popup-img-pack/0/popup-subscribe-default-img.png 1x"></div></div></div><div class="kmb-widget-col md_w-3-5 w-full"><div class="md_py-10 md_px-16 py-5 px-8"><div class="pop-up-widget-main-content"><div class="pop-up-widget-content-title"><h2 class="kmb-widget-rich-text kmb-widget-title-h2 kmb-widget-title-no-divider md_text-left text-center mb-0" data-max-chars="120">Welcome to Landblaze,<br>Kindly Subscribe to our newsletter</h2></div><div class="pop-up-widget-content-description"><p class="kmb-widget-rich-text kmb-widget-description md_text-left text-center mt-2" data-max-chars="120">Do you want to know all the news? Subscribe our newsletter to get weekly updates.</p></div><form action="https://formspree.io/f/mvgorezl" method="POST" class="kmb-subscribe-form-group kmb-site-popup-widget-subscribe-form-row"><div class="kmb-subscribe-form-field-group kmb-widget-el-group"><div class="kmb-site-field-group kmb-field-group"><div class="kmb-site-field kmb-field"><input type="email" class="kmb-site-form-control" placeholder="Enter your email here" name="email"></div></div></div><div class="kmb-subscribe-form-btn-group kmb-widget-form-group text-center"><button class="kmb-widget-btn kmb-widget-primary-btn kmb-site-subscribe-form-button w-full" type="submit" aria-label="button"> <span class="kmb-widget-btn-label">Subscribe</span><!----></button></div></form></div><!----></div></div></div></div></div></div></div></div></div></div></div>
+        
         </footer>
         <!-- <div class="kmb-site-popup-wrap"></div> -->
-        <div class="kmb-site-popup-wrap kmb-site-popup-wrap-opened"><div class="kmb-site-pop-up-widget kmb-site-pop-up-modal kmb-site-pop-up-widget-form-type-popup kmb-site-pop-up-full-widget-container kmb-site-pop-up-widget-form-middle"><div class="kmb-site-pop-up-modal-dialog w-full"><div class="kmb-site-modal-content"><div class="kmb-site-modal-header kmb-site-pop-up-modal-header"><button class="kmb-site-close-modal-btn" aria-label="close"><i class="kmb-site-icon-close"></i></button></div><div class="kmb-site-modal-body"><div class="kmb-page-widget widget-toolbar-visible"><div class="pop-up-subscribe pop-up-subscribe-v2" widget="[object Object]"><div class="pop-up-widget-content"><div class="kmb-widget-row items-center"><div class="kmb-widget-col md_w-2-5 w-full"><div class="pop-up-widget-content-image md_pr-3 pr-0"><div data-width="420" class="kmb-widget-image kmb-lg-image-h-auto kmb-lg-image-center kmb-widget-image-item-no-rounded"><img width="420" height="420" alt="Landblaze Limited" loading="lazy" data-nuxt-img="" data-width="420" data-height="420" class="kmb-widget-image-item  kmb-widget-type-image" src="https://img2.hocoos.com/cache/w-420/h-420/ww-420/wh-420/popup-img-pack/0/popup-subscribe-default-img.png" style="max-width: 420px; max-height: 420px;" srcset="https://img2.hocoos.com/cache/w-420/h-420/ww-420/wh-420/popup-img-pack/0/popup-subscribe-default-img.png 1x"></div></div></div><div class="kmb-widget-col md_w-3-5 w-full"><div class="md_py-10 md_px-16 py-5 px-8"><div class="pop-up-widget-main-content"><div class="pop-up-widget-content-title"><h2 class="kmb-widget-rich-text kmb-widget-title-h2 kmb-widget-title-no-divider md_text-left text-center mb-0" data-max-chars="120">Subscribe newsletter</h2></div><div class="pop-up-widget-content-description"><p class="kmb-widget-rich-text kmb-widget-description md_text-left text-center mt-2" data-max-chars="120">Do you want to know all the news? Subscribe our newsletter to get weekly updates.</p></div><form action="https://formspree.io/f/mvgorezl" method="POST" class="kmb-subscribe-form-group kmb-site-popup-widget-subscribe-form-row"><div class="kmb-subscribe-form-field-group kmb-widget-el-group"><div class="kmb-site-field-group kmb-field-group"><div class="kmb-site-field kmb-field"><input type="email" class="kmb-site-form-control" placeholder="Enter your email here" name="email"></div></div></div><div class="kmb-subscribe-form-btn-group kmb-widget-form-group text-center"><button class="kmb-widget-btn kmb-widget-primary-btn kmb-site-subscribe-form-button w-full" type="submit" aria-label="button"> <span class="kmb-widget-btn-label">Subscribe</span><!----></button></div></form></div><!----></div></div></div></div></div></div></div></div></div></div></div>
         
       </div>
     </div>
     <div id="teleports"></div>
-    <script>
-            // Function to handle modal state
-        const handlePopupModal = () => {
-          // Get modal elements
-          const modalWrap = document.querySelector('.kmb-site-popup-wrap');
-          const closeButton = document.querySelector('.kmb-site-close-modal-btn');
-          const subscribeForm = document.querySelector('.kmb-subscribe-form-group');
-          
-          // Function to close modal and remove blur
-          const closeModal = () => {
-            modalWrap.classList.remove('kmb-site-popup-wrap-opened');
-            // Optional: If you want to completely remove the wrapper
-            // modalWrap.style.display = 'none';
-          };
-          
-          // Close modal when clicking the close button
-          closeButton.addEventListener('click', closeModal);
-          
-          // Handle form submission and cancellation
-          subscribeForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Handle form submission logic here
-            closeModal();
-          });
-          
-          // Optional: Close modal when clicking outside
-          modalWrap.addEventListener('click', (e) => {
-            if (e.target === modalWrap) {
-              closeModal();
-            }
-          });
-        };
-
-        // Initialize the modal handler
-        document.addEventListener('DOMContentLoaded', handlePopupModal);
-  
-     </script>
-     <script>
-          document.addEventListener('DOMContentLoaded', function() {
-        const testimonials = [
-            {
-                text: "Landblaze made it easy to find the right property for my family's needs.",
-                author: "Mr. Tolu"
-            },
-            {
-                text: "Their professionalism and transparency are unmatched. I'm thrilled with my purchase!",
-                author: "Mrs. Oye"
-            },
-            {
-                text: "Landblaze guided me seamlessly through my first land investment. I felt secure every step of the way!",
-                author: "Mr. Ade"
-            }
-        ];
-
-        const stage = document.querySelector('.kmb-slider-stage');
-        const indicatorsWrapper = document.querySelector('.kmb-site-slider-indicators-wrapper');
-        let currentSlide = 0;
-        let isTransitioning = false;
-        let slideInterval;
-
-        // Add CSS transitions to the stage
-        stage.style.transition = 'transform 0.8s ease-in-out';
-
-        // Create slides with initial opacity
-        testimonials.forEach((testimonial, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'kmb-site-slider-item kmb-slider-item my-24';
-            slide.style.width = '100%';
-            slide.style.opacity = index === 0 ? '1' : '0';  // Set initial opacity
-            slide.style.transition = 'opacity 0.8s ease-in-out';  // Add transition
-            slide.innerHTML = `
-                <div class="kmb-lg-widget-container">
-                    <div class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-slider-description text-center kmb-centered-item mb-0">
-                        ${testimonial.text}
-                    </div>
-                    <div class="kmb-slider-no-swiped-container">
-                        <div class="kmb-lg-widget-container kmb-widget-col-group">
-                            <h2 class="kmb-widget-rich-text kmb-widget-title-h4 text-center">
-                                ${testimonial.author}
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            `;
-            stage.appendChild(slide);
-        });
-
-        // Create indicators
-        testimonials.forEach((_, index) => {
-            const indicator = document.createElement('button');
-            indicator.className = `kmb-site-slider-indicator slider-indicator mx-2 ${index === 0 ? 'active' : ''}`;
-            indicator.setAttribute('aria-label', `${index + 1}`);
-            indicator.style.borderColor = '#fda63a';
-            indicator.style.transition = 'background-color 0.3s ease';  // Add transition
-            if (index === 0) indicator.style.background = '#fda63a';
-            
-            indicator.addEventListener('click', () => {
-                if (!isTransitioning) {
-                    resetInterval();
-                    goToSlide(index);
-                }
-            });
-            
-            indicatorsWrapper.appendChild(indicator);
-        });
-
-        function updateSlidePosition() {
-            // Update transform for slide movement
-            stage.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            // Update opacity of slides
-            const slides = document.querySelectorAll('.kmb-site-slider-item');
-            slides.forEach((slide, index) => {
-                slide.style.opacity = index === currentSlide ? '1' : '0';
-            });
-            
-            updateIndicators();
-        }
-
-        function updateIndicators() {
-            document.querySelectorAll('.kmb-site-slider-indicator').forEach((indicator, index) => {
-                if (index === currentSlide) {
-                    indicator.classList.add('active');
-                    indicator.style.background = '#fda63a';
-                } else {
-                    indicator.classList.remove('active');
-                    indicator.style.background = 'transparent';
-                }
-            });
-        }
-
-        function goToSlide(index) {
-            if (isTransitioning) return;
-            isTransitioning = true;
-            currentSlide = index;
-            updateSlidePosition();
-            setTimeout(() => {
-                isTransitioning = false;
-            }, 800);  // Match the transition duration
-        }
-
-        function nextSlide() {
-            if (!isTransitioning) {
-                currentSlide = (currentSlide + 1) % testimonials.length;
-                goToSlide(currentSlide);
-            }
-        }
-
-        function prevSlide() {
-            if (!isTransitioning) {
-                currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
-                goToSlide(currentSlide);
-            }
-        }
-
-        // Reset interval timer when manually navigating
-        function resetInterval() {
-            clearInterval(slideInterval);
-            startInterval();
-        }
-
-        // Start automatic sliding
-        function startInterval() {
-            slideInterval = setInterval(nextSlide, 3000);  // 2 minutes = 120000ms
-        }
-
-        // Add event listeners
-        const nextButton = document.querySelector('.kmb-slide-next-btn');
-        const prevButton = document.querySelector('.kmb-slide-prev-btn');
-        
-        nextButton.addEventListener('click', () => {
-            resetInterval();
-            nextSlide();
-        });
-        
-        prevButton.addEventListener('click', () => {
-            resetInterval();
-            prevSlide();
-        });
-
-        // Initialize first slide and start automatic sliding
-        updateSlidePosition();
-        startInterval();
-
-        // Optional: Pause interval on hover (uncomment if desired)
-        /*
-        stage.addEventListener('mouseenter', () => {
-            clearInterval(slideInterval);
-        });
-        
-        stage.addEventListener('mouseleave', () => {
-            startInterval();
-        });
-        */
-    });
-     </script>
     
+    <script>
+      // Function to handle modal state
+  const handlePopupModal = () => {
+    // Get modal elements
+    const modalWrap = document.querySelector('.kmb-site-popup-wrap');
+    const closeButton = document.querySelector('.kmb-site-close-modal-btn');
+    const subscribeForm = document.querySelector('.kmb-subscribe-form-group');
+    
+    // Function to close modal and remove blur
+    const closeModal = () => {
+      modalWrap.classList.remove('kmb-site-popup-wrap-opened');
+      // Optional: If you want to completely remove the wrapper
+      // modalWrap.style.display = 'none';
+    };
+    
+    // Close modal when clicking the close button
+    closeButton.addEventListener('click', closeModal);
+    
+    // Handle form submission and cancellation
+    subscribeForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Handle form submission logic here
+      closeModal();
+    });
+    
+    // Optional: Close modal when clicking outside
+    modalWrap.addEventListener('click', (e) => {
+      if (e.target === modalWrap) {
+        closeModal();
+      }
+    });
+  };
+
+  // Initialize the modal handler
+  document.addEventListener('DOMContentLoaded', handlePopupModal);
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const testimonials = [
+      {
+          text: "Landblaze made it easy to find the right property for my family's needs.",
+          author: "Mr. Tolu"
+      },
+      {
+          text: "Their professionalism and transparency are unmatched. I'm thrilled with my purchase!",
+          author: "Mrs. Oye"
+      },
+      {
+          text: "Landblaze guided me seamlessly through my first land investment. I felt secure every step of the way!",
+          author: "Mr. Ade"
+      }
+  ];
+
+  const stage = document.querySelector('.kmb-slider-stage');
+  const indicatorsWrapper = document.querySelector('.kmb-site-slider-indicators-wrapper');
+  let currentSlide = 0;
+  let isTransitioning = false;
+  let slideInterval;
+
+  // Add CSS transitions to the stage
+  stage.style.transition = 'transform 0.8s ease-in-out';
+
+  // Create slides with initial opacity
+  testimonials.forEach((testimonial, index) => {
+      const slide = document.createElement('div');
+      slide.className = 'kmb-site-slider-item kmb-slider-item my-24';
+      slide.style.width = '100%';
+      slide.style.opacity = index === 0 ? '1' : '0';  // Set initial opacity
+      slide.style.transition = 'opacity 0.8s ease-in-out';  // Add transition
+      slide.innerHTML = `
+          <div class="kmb-lg-widget-container">
+              <div class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-slider-description text-center kmb-centered-item mb-0">
+                  ${testimonial.text}
+              </div>
+              <div class="kmb-slider-no-swiped-container">
+                  <div class="kmb-lg-widget-container kmb-widget-col-group">
+                      <h2 class="kmb-widget-rich-text kmb-widget-title-h4 text-center">
+                          ${testimonial.author}
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      `;
+      stage.appendChild(slide);
+  });
+
+  // Create indicators
+  testimonials.forEach((_, index) => {
+      const indicator = document.createElement('button');
+      indicator.className = `kmb-site-slider-indicator slider-indicator mx-2 ${index === 0 ? 'active' : ''}`;
+      indicator.setAttribute('aria-label', `${index + 1}`);
+      indicator.style.borderColor = '#fda63a';
+      indicator.style.transition = 'background-color 0.3s ease';  // Add transition
+      if (index === 0) indicator.style.background = '#fda63a';
+      
+      indicator.addEventListener('click', () => {
+          if (!isTransitioning) {
+              resetInterval();
+              goToSlide(index);
+          }
+      });
+      
+      indicatorsWrapper.appendChild(indicator);
+  });
+
+  function updateSlidePosition() {
+      // Update transform for slide movement
+      stage.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      // Update opacity of slides
+      const slides = document.querySelectorAll('.kmb-site-slider-item');
+      slides.forEach((slide, index) => {
+          slide.style.opacity = index === currentSlide ? '1' : '0';
+      });
+      
+      updateIndicators();
+  }
+
+  function updateIndicators() {
+      document.querySelectorAll('.kmb-site-slider-indicator').forEach((indicator, index) => {
+          if (index === currentSlide) {
+              indicator.classList.add('active');
+              indicator.style.background = '#fda63a';
+          } else {
+              indicator.classList.remove('active');
+              indicator.style.background = 'transparent';
+          }
+      });
+  }
+
+  function goToSlide(index) {
+      if (isTransitioning) return;
+      isTransitioning = true;
+      currentSlide = index;
+      updateSlidePosition();
+      setTimeout(() => {
+          isTransitioning = false;
+      }, 800);  // Match the transition duration
+  }
+
+  function nextSlide() {
+      if (!isTransitioning) {
+          currentSlide = (currentSlide + 1) % testimonials.length;
+          goToSlide(currentSlide);
+      }
+  }
+
+  function prevSlide() {
+      if (!isTransitioning) {
+          currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
+          goToSlide(currentSlide);
+      }
+  }
+
+  // Reset interval timer when manually navigating
+  function resetInterval() {
+      clearInterval(slideInterval);
+      startInterval();
+  }
+
+  // Start automatic sliding
+  function startInterval() {
+      slideInterval = setInterval(nextSlide, 3000);  // 2 minutes = 120000ms
+  }
+
+  // Add event listeners
+  const nextButton = document.querySelector('.kmb-slide-next-btn');
+  const prevButton = document.querySelector('.kmb-slide-prev-btn');
+  
+  nextButton.addEventListener('click', () => {
+      resetInterval();
+      nextSlide();
+  });
+  
+  prevButton.addEventListener('click', () => {
+      resetInterval();
+      prevSlide();
+  });
+
+  // Initialize first slide and start automatic sliding
+  updateSlidePosition();
+  startInterval();
+
+  // Optional: Pause interval on hover (uncomment if desired)
+  /*
+  stage.addEventListener('mouseenter', () => {
+      clearInterval(slideInterval);
+  });
+  
+  stage.addEventListener('mouseleave', () => {
+      startInterval();
+  });
+  */
+});
+</script>
      
   </body>
 </html>
